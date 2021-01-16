@@ -1,0 +1,221 @@
+/* if there is a padding it will push the borders further away from the text */
+/* if there is margin would put space between itself and other elments */
+
+/* Display Property */
+/* can move Block elements blocks out every other elements */
+/* but cant move Inline element allows things beside each other */
+/* Inline-block is a mix of block and inline */
+/* None is makes the element disapear with the box also disapearing*/
+/* visibility: hidden will hide the element but keey the box collider */
+
+
+/* Positioning */
+/* Static - just go by the already defined css rules */
+/* Relative - it changes it position relative to the previous position */
+/*           - When I move an element that has relative position it does not affect the position of anything else on the screen */
+/*           - It does not affect any other object in the screen */
+/* Cordinates - it moves the shape by addding a force (top,bottom,right,left) */
+/*             - It moves everything down with it self */
+/* Absolute - absolute position makes the object change position relative to the parent */
+/* Fixed - will stay stuck on screen even if you try to scroll down */
+/*
+How to center objects on the screen:
+if something has a width set, the we can use:
+ margin: 0 auto;
+ this will work as the right and left are automatically going to be set according to the screen size
+
+if something does not have a width set then we can use:
+   text-align:center;
+ */
+
+/* body */
+body
+{
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+}
+
+/* top container */
+.top-container
+{
+  background:#bce6eb;
+  position: relative;
+  padding-top: 100px;
+}
+.subtitle
+{
+  font-weight: normal;
+}
+.top_cld
+{
+  position:absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.btm_cld
+{
+  position:absolute;
+  left:200PX;
+  bottom:350px;
+}
+
+
+/* Text effects */
+
+
+/* line height will add space to the bottom and top */
+
+h1
+{
+  /* By default 100% is 16 px we use % as differnt browsers can change the average font size ddepending on what the user has*/
+  /* the measure em is 16px */
+  /* the em will be enharitaed from parent */
+  /* rem is root  em which ignores the parent's size */
+  font-size: 5.625rem;
+  margin-top: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+}
+h2
+{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+h3
+{
+  color: #66BFBF;
+  font-family: 'Montserrat', sans-serif;
+}
+.underline
+{
+  text-decoration: underline;
+}
+a
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+/* middle container */
+
+
+.about-me-paragraph
+{
+  width: 50%;
+  line-height: 2;
+  margin: auto;
+}
+
+
+
+/* The float property will make the the item float  to the right or left and then make the text wrap around it */
+/* The clear property is like the opposite of the float */
+.img-laptop
+{
+  width:33%;
+  border-radius:100%;
+  margin-right: 30px;
+  float: left;
+}
+.img-sport
+{
+  width:33%;
+  float: right;
+  margin-left: 30px;
+}
+
+.heading-middle
+{
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+#contact-me-btn
+{
+  margin: 10px;
+  padding: 10px;
+  background-color: #66BFBF;
+  border-radius: 7%;
+  font-size: 1.2rem;
+  color:#EAF6F6;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+
+}
+
+#contact-me-btn:hover
+{
+  background-color: #11999E;
+}
+#contact-me-btn:active
+{
+  background-color: #66BFBF;
+}
+
+
+.contact-info-paragraph
+{
+  margin: auto;
+  width: 40%;
+  margin-bottom: 25px;
+  line-height: 2;
+}
+
+.skill-row
+{
+  width: 50%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+hr
+{
+  border-color: #c7c7c7;
+  border-style: dotted;
+  border-top: 100px;
+  border-width: 10px;
+  width: 3%;
+  margin: 100px auto;
+
+}
+
+
+/* This is the code for the footer */
+.bottom-container
+{
+  background-color: #66BFBF;
+  margin: 35px auto auto auto;
+  padding:20px;
+}
+.footer-link
+{
+  font-weight: bold;
+  color: #11999E;
+  margin: 0;
+  padding-right: 30px;
+  text-decoration: none;
+}
+.footer-link:hover
+{
+  color: #0e797d;
+}
+.footer-link:active
+{
+  color: #11999E;
+}
+.copy-right
+{
+  font-weight: bold;
+  color: #0e797d;
+  margin: 0;
+  padding-top:20px;
+}
